@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<meta name="Keywords" content="2014山东红十字会公益活动汇总,山东红十字会扶贫,山东红十字会医院救助活动,山东红十字会失独救助" />
+<meta name="Description" content="公益先行者—这是社会媒体和大众为山东红十字会医院的一个定位。这一定位，是医院多年来力行公益，屡屡带动社会关注、掀起社会公益热潮的结果。回顾2014年山东红十字会医院的一路公益。" />
+<script type="text/javascript" src="http://js.ql91.cn/ql91com/ql91/jquery.js"></script>
+<title>社会眼中的公益先行者_山东红十字会医院</title>
+<script>
+ 
+ var timer = null;
+function startMove(iTarget){
+    var oUl = document.getElementById("ul1");
+    var speed;
+
+    clearInterval(timer);   
+    timer = setInterval(function(){
+        if(oUl.offsetLeft<iTarget){
+            speed = 10;
+        } else {
+            speed = -10;
+        }
+          
+        if(Math.abs( iTarget - oUl.offsetLeft)<= 10 ){           
+            clearInterval(timer);
+            oUl.style.left = iTarget + "px";           
+        } else {
+            oUl.style.left = oUl.offsetLeft + speed + "px";
+        }
+    },30);
+
+}
+
+
+	
+	$(function(){
+		
+		//var sSs=$(".mbox ul li:last").find(".mbox ul").position().left;
+		var ulwidth = $("#ul1 li").length * $("#ul1 li").width()+62;
+		awidth = ulwidth-$(window).width();
+		
+		$(".mbox").mousemove(function(){
+			
+			if($("#ul1").position().left==0){
+				$("#lef").hide();
+			}else{
+				$("#lef").show();
+			}
+			
+			if($(".aaaa").width()==null){				
+				width = awidth;
+			}else{
+				width = awidth+(514-169);
+			}
+
+console.log($("#ul1").position().left,width);
+			if($("#ul1").position().left==-width){
+				$("#rit").hide();
+			}else{
+				$("#rit").show();
+			}
+		});
+	
+			
+		$('.m_lef').hover(function(){			
+			startMove(0);
+			},function(){
+				clearInterval(timer);
+			});
+			
+			
+		$('.m_rit').hover(function(){			
+			
+			if($(".aaaa").width()==null){				
+				width = awidth;
+			}else{
+				width = awidth+(514-169);
+			}
+			startMove(-width);
+			},function(){
+				clearInterval(timer);
+			});
+				
+
+	var autotime = 3000;//滚动的间隔时间
+	var num = 3;//每次滚动的宽带
+	var speed = 500;//滚动的速度
+
+    $(".mbox ul li").mouseenter(function(event){
+		$(this).addClass("aaaa").siblings().removeClass("aaaa");
+    	$(this).find(".off").hide().siblings('.on').show();
+    	$(this).find(".on").stop().animate({opacity:1}, 500);
+    	$(this).siblings("li").find(".on").stop().animate({opacity:0.8},500);
+    	$(this).stop().animate({width:"514px"},500, function() {});
+    	$(this).siblings("li").stop().animate({width:"169px"},
+    		500, function() {
+    		$(this).find(".off").show().siblings('.on').hide();
+    	});
+
+    });
+	
+	
+	});
+ 
+ 
+
+ 
+</script>
+<!--[if IE 6]>
+<script src="js/iepng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   EvPNG.fix('*'); 
+</script>
+<![endif]-->
+
+</head>
+
+<body>
+
+
+<div class="mbox">
+<div class="m_lef" id="lef"></div>
+	<ul id="ul1">
+		<li>
+			<div class="off"><a href="http://www.ql91.com/newzhuanti/2013nuandong/index.html"><h4><br /><br /><br />山<br />区<br />小<br />学<br />送<br />温<br />暖</h4><img src="image/1_1.jpg" alt=""></a></div>
+		 	<div class="on">
+           <a href="http://www.ql91.com/newzhuanti/2013nuandong/index.html"> <img src="image/1.jpg" alt=""></a>
+             <h3>山区小学送温暖</h3>
+            <p>2013年11月初，山东红十字会医院获悉，冬天来临章丘麦腰小学还没有取暖设备。11月18日，医院组织并落实“2013暖冬计划公益行动”，出资为学校送去爱心电暖器18台，让这些孩子们过一个温暖的冬天。</p>
+
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/yiyuandongtai_10854.html?1419994577"><h4><br /><br /><br /> 敬<br /> 老<br /> 院<br /> 慰<br /> 问<br /> 老<br /> 人</h4><img src="image/2_2.jpg" alt=""></a></div>
+		 	<div class="on">
+           <a href="http://www.ql91.com/web/yiyuandongtai_10854.html?1419994577"> <img src="image/2.jpg" alt=""></a>
+            <h3>敬老院慰问老人</h3>
+            <p>2013年9月16日，在中秋节来临之际，山东红十字会医院领导来到济南市社会福利院，看望和慰问了那里的35位“三无老人”，给他们送去了花篮、月饼、水果、衣服、鞋子等过节慰问品，并开展了“老年健康保健常识主题讲座”，受到敬老院老人的热烈欢迎和交口称赞。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br /> “<br /> 健<br /> 康<br /> 山<br /> 东<br /> 行<br /> ”<br /> 走<br /> 进<br /> 平<br /> 阴</h4><img src="image/3_3.jpg" alt=""></div>
+		 	<div class="on"><img src="image/3.jpg" alt="">
+            <h3>“健康山东行”走进平阴</h3>
+            <p>2013年5月25日，山东广播电视台、山东广播电视台齐鲁网《慈善真情》栏目主办的“健康山东行”公益活动在平阴广场正式启动。山东红十字会医院作为主要支持单位之一，选派了妇科、不孕不育科、内科、外科等10余名专家/医生，免费为平阴人民供了测血压、测血糖、听诊等检查服务，并根据病历现场分析、答疑解惑。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/yiyuandongtai_9530.html"><h4><br /><br /><br /><br />为<br />雅<br />安<br />震<br />区<br />献<br />血</h4><img src="image/4_4.jpg" alt=""></a></div>
+		 	<div class="on">
+            <a href="http://www.ql91.com/web/yiyuandongtai_9530.html"><img src="image/4.jpg" alt=""></a>
+            <h3>为雅安震区献血</h3>
+            <p>2013年4月20日，四川省雅安市发生7.0级地震。震后两天，传来雅安血库告急，灾区群众急需血液的消息。山东省卫生厅紧急调配临床用血，山东红十字会医院利用自身优势，积极参与到市卫生局新闻办、济南日报、市血液供保中心联合主办的支援雅安•“血脉相连”大型无偿献血公益活动中。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/yiyuandongtai_8904.html"><h4><br /><br />发<br />放<br />万<br />余<br />口<br />罩<br />“<br />自<br />强<br />不<br />吸<br />”</h4><img src="image/5_5.jpg" alt=""></a></div>
+		 	<div class="on"><a href="http://www.ql91.com/web/yiyuandongtai_8904.html"><img src="image/5.jpg" alt=""></a>
+              <h3>发放万余口罩“自强不吸”</h3>
+              <p>长期的雾霾天气笼罩泉城，这给泉城广大市民的出行和健康都带来了极坏的影响。很多市民出现呼吸系统的不适。2013年2月1日，山东红十字会医院携手齐鲁网齐鲁公益在全省发起“自强不吸”万只口罩免费发放大型公益活动，旨在保护城市居民，让市民都用上专业的防护口罩。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/yiyuandongtai_7852.html?1419994686"><h4><br /><br /><br />为<br />云<br />贵<br />地<br />震<br />灾<br />区<br />捐<br />款</h4><img src="image/6_6.jpg" alt=""></a></div>
+		 	<div class="on"><a href="http://www.ql91.com/web/yiyuandongtai_7852.html?1419994686"><img src="image/6.jpg" alt=""></a>
+            <h3>为云贵地震灾区捐款</h3>
+            <p>2012年9月7日，云贵地区发生5.7级地震，造成86人死亡，74万人受灾，近万间房屋倒塌。闻听噩耗后，山东红十字会医院在第一时间发起“发扬红会精神 积极奉献爱心”的捐款活动。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/yiyuandongtai_6409.html?1419994705"><h4><br />为<br />爱<br />延<br />续<br />•<br />中<br />年<br />父<br />母<br />再<br />生<br />育 </h4><img src="image/7_7.jpg" alt=""></a></div>
+		 	<div class="on"><a href="http://www.ql91.com/web/yiyuandongtai_6409.html?1419994705"><img src="image/7.jpg" alt=""></a>
+            <h3>为爱延续•中年父母再生育</h3>
+            <p>2012年8月6日，《齐鲁晚报》发表六一专题文章《为爱延续•中年父母再生育》，对山东红十字会医院多年来帮助“失独家庭”娄立青一家的事迹进行了整版专题报道，宣扬社会责任，呼唤社会爱心。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/2173.html?1419994724"><h4><br /><br /><br /><br />义<br />诊<br />队<br />伍<br />走<br />进<br />平<br />阴</h4><img src="image/8_8.jpg" alt=""></a></div>
+		 	<div class="on">
+           <a href="http://www.ql91.com/web/2173.html?1419994724"> <img src="image/8.jpg" alt=""></a>
+            <h3>义诊队伍走进平阴</h3>
+            <p>011年5月14日上午九点半，受济南市爱卫办之邀，山东红十字会医院走进平阴新广场，加入“健康济南行动”的义诊队伍，为当地市民提供送到家门口的医疗服务。济南市爱卫办欧阳贵庭主任特别对于山东红十字会医院为社会公益所作工作表示肯定及感谢。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br /><br /><br /><br />金<br />秋<br />助<br />学<br />送<br />书<br />包</h4><img src="image/9_9.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/9.jpg" alt="">
+            <h3>金秋助学送书包</h3>
+            <p> 2011年8月31日，在学生们开学之前，著名影视演员，山东红十字会医院形象代言人方青卓女士特意从北京剧组告假，和山东红十字会医院领导一起，为即将入学的（贫困）红会福娃娃们，送去温暖关爱的崭新书包和鼓励贺卡，给学龄红会福娃娃们一个特别的入学惊喜。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/web/508.html?1419994790"><h4><br /><br /><br /><br />为<br />灾<br />区<br />捐<br />款<br />15<br />万</h4><img src="image/10_10.jpg" alt=""></a></div>
+		 	<div class="on">
+            <a href="http://www.ql91.com/web/508.html?1419994790"><img src="image/10.jpg" alt=""></a>
+            <h3>为灾区捐款15万</h3>
+            <p>2010年4月26日晚，在山东电视台演播大厅，由山东省红十字会、山东电视台、齐鲁网主办，山东红十字会医院协办的“抗震救灾 山东在行动”支援青海玉树地震灾区公益募捐晚会隆重举办，整场晚会募集捐款共计3276.35万元。其中，山东红十字会医院捐款15万元。 </p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4>2010<br />医<br />学<br />志<br />愿<br />者<br />送<br />子<br />扶<br />贫<br />大<br />型<br />公<br />益<br />活<br />动</h4><img src="image/11_11.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/11.jpg" alt="">
+            <h3>2010医学志愿者送子扶贫大型公益活动</h3>
+            <p>2010年，山东红十字会医院斥巨资启动“2010医学志愿者送子扶贫大型公益活动”。数十位不孕不育专家组成志愿者团队，为贫困不孕不育患者进行全程免费诊疗。超过百家家庭得到免费诊疗，多家不孕夫妇传来好孕福音。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br /><br /><br />为<br />五<br />省<br />旱<br />灾<br />区<br />捐<br />款<br />捐<br />物</h4><img src="image/12_12.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/12.jpg" alt="">
+            <h3>为五省旱灾区捐款捐物</h3>
+            <p>2010年的春天，持续的高温、少雨致使云南、广西、贵州、四川、重庆五省区市旱情加剧。部分地区遭受了六十年甚至百年不遇的特大旱灾。4月2日，山东红十字会医院发起为区捐款活动，帮助西南五省区度过眼前的困境。 </p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br /><br />为<br />台<br />湾<br />台<br />风<br />灾<br />区<br />捐<br />款<br />献<br />爱<br />心</h4><img src="image/13_13.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/13.jpg" alt="">
+            <h3>为台湾台风灾区捐款献爱心</h3>
+            <p>2009年8月8日，受台风“莫拉可”的侵袭，台湾遭遇了五十年来最大的水灾，数百人死亡，几十人无家可归。台风无情人有情，山东红十字会医院相应省红十字会号召，组织开展捐款活动，支援灾区人民重建家园。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br />2009<br />爱<br />心<br />彩<br />虹<br />桥<br />女<br />性<br />助<br />孕<br />活<br />动</h4><img src="image/14_14.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/14.jpg" alt="">
+            <h3>2009爱心彩虹桥女性助孕活动</h3>
+            <p>继2008年公益扶贫活动后，2009年，山东红十字会医院继续延续公益梦想，开展了“2009爱心彩虹桥女性助孕活动”，针对特困不孕女性设置救助基金，进行免费的医疗援助，一年内再次为百余位不孕女性要上了自己的红会福娃娃。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><a href="http://www.ql91.com/index.html"><h4><br />2008<br />爱<br />心<br />扶<br />贫<br />送<br />子<br />大<br />型<br />公<br />益<br />活<br />动</h4><img src="image/15_15.jpg" alt=""></a></div>
+		 	<div class="on">
+            <a href="http://www.ql91.com/index.html"><img src="image/15.jpg" alt=""></a>
+            <h3>2008爱心扶贫送子大型公益活动</h3>
+            <p>山东红十字会医院启动爱心2008爱心扶贫送子大型公益活动，免费为贫困不孕家庭进行治疗，一年间，耗资79万，为百余家庭进行免费诊疗，目前已经有山东聊城、山东济宁、河北沧州等全国各地的诸多家庭拥有了自己的红会福娃娃。图为方青卓和医院领导来到聊城贫困不孕不育患病者家中开展慰问活动。</p>
+            </div>
+		 </li>
+		<li>
+			<div class="off"><h4><br /><br />“<br />红<br />会<br />福<br />娃<br />娃<br />健<br />康<br />大<br />普<br />查<br />”</h4><img src="image/16_16.jpg" alt=""></div>
+		 	<div class="on">
+            <img src="image/16.jpg" alt="">
+            <h3>“红会福娃娃 健康大普查”</h3>
+            <p>2007年，山东红十字会医院开展“红会福娃娃 健康大普查”活动，为那些在医院帮助下诞生的红会福娃娃进行免费的健康检查。此次普查活动将爱心撒播到济南、淄博、泰安、德州等山东各地，超过500名红会福娃娃得到健康体检，赢得各地群众的一致好评。</p>
+            </div>
+		 </li>
+	</ul>
+<div class="m_rit" id="rit"></div>
+</div>
+
+
+</body>
+
+</html>
